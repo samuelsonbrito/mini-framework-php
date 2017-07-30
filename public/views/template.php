@@ -8,12 +8,8 @@
     </head>
     <body>
 
-        <a href="<?= BASE_URL ?>">Home</a>
-        <a href="<?= BASE_URL . 'galeria' ?>">Galeria</a>
 
         <div class="container">
-            
-            <a href="<?= BASE_URL ?>login" class="btn btn-info btn-sm">Login</a>
 
             <?php $this->loadViewInTemplate($viewName, $viewData); ?>
 

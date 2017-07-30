@@ -1,19 +1,4 @@
-<?php
-
-$anuncio = new Anuncios();
-$result = $anuncio->select();
-
-foreach ($result as $value) {
-   echo $value['titulo'].'<br>'; 
-}
-
-?>
-
-<div class="posts">
+<div class="text-center">
     
-    <div class="post">
-        
-    </div>
-    
+    <h2>Bem vindo ao <b>Mini Framework</b> - Use como quiser</h2>
 </div>
-<button class="btn btn-sm btn-success j_mais">Mais posts</button>
