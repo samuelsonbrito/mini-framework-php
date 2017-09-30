@@ -19,4 +19,12 @@ class Request {
         return $gets;
     }
 
+    public static function put(...$params){
+
+    }
+
+    public static function delete($param){
+
+    }
+
 }

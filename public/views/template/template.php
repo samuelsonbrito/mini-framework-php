@@ -6,7 +6,7 @@
     </head>
     <body>
 
-        teste
+         <?php $this->loadViewInTemplate($viewName, $viewData); ?>
 
     </body>
 </html>
