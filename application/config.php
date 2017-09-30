@@ -1,4 +1,8 @@
 <?php
+/**
+ * -------------- Informações do Sistema -----------------
+ */
+define("TITLE_NAME", "Descompila");
 
 /**
  * -------------- Tipo de Ambiente -----------------
@@ -9,9 +13,8 @@ require 'environment.php';
 $config = array();
 
 if (ENVIRONMENT == 'development') {
-    define("BASE_URL", "http://localhost/min-framework-php/");
-    define("TITLE_NAME", "MVC");
-    $config['dbname'] = 'mvcbasico';
+    define("BASE_URL", "http://localhost/mini-framework-php/");
+    $config['dbname'] = 'dbmercadinho';
     $config['host'] = 'localhost';
     $config['dbuser'] = 'root';
     $config['dbpass'] = '';
@@ -45,6 +48,8 @@ spl_autoload_register(function($class) {
         require "application/models/{$class}.php";
     } elseif (file_exists("application/core/{$class}.php")) {
         require "application/core/{$class}.php";
+    } elseif (file_exists("application/facade/{$class}.php")) {
+        require "application/facade/{$class}.php";
     }
 });
 

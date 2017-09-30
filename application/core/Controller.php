@@ -5,7 +5,7 @@
  *
  * @author Samuelson
  */
-abstract class Controller {
+ class Controller {
 
     public function loadView($viewName, $viewData = array()) {
 
@@ -21,7 +21,10 @@ abstract class Controller {
     }
     
     public function loadTemplate($viewName, $viewData = array(),$titleHTML = null) {
-        require 'public/views/template.php';
+        require 'public/views/template/template.php';
+    }
+    public function loadTemplateAdmin($viewName, $viewData = array(),$titleHTML = null) {
+        require 'public/views/template/template-admin.php';
     }
     public function loadViewInTemplate($viewName, $viewData = array()) {
         

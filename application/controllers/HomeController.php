@@ -12,8 +12,4 @@ class HomeController extends Controller{
         $this->loadTemplate('home');
     }
     
-    public function testar() {
-        
-    }
-    
 }
